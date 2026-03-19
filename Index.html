@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>11-Б Бардась Максим</title>
+  <style>
+    fieldset {
+      background-color: #ffff00; /* світла заливка */
+      border: 5px solid #333;
+      padding: 15px;
+    }
+    legend {
+      background-color: #00ff00; /* інший колір */
+      padding: 7px 10px;
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Замовлення напоїв</h2>
+  <form action="mailto:yourmail@example.com" method="post">
+    <fieldset>
+      <legend>Ваші дані</legend>
+
+      <label>Ваше прізвище :
+        <input type="text" name="name" required>
+      </label>
+
+      <label>Ваше ім'я :
+        <input type="text" name="name" required>
+      </label>
+
+      <label>Ваш телефон :
+        <input type="password" name="password">
+      </label>
+<label>Кількість:
+        <input type="number" name="age"  min="1" max="50"<br><br>
+      </label>
+
+      <label>Виберіть розмір напою:</label>
+      <input type="radio" name="size" value="Мала"> Малий
+      <input type="radio" name="size" value="Середня"> Середній
+      <input type="radio" name="size" value="Велика"> Великій
+<label> напоЇ:</label>
+      <input type="radio" name="size" value="Мала"> кола
+      <input type="radio" name="size" value="Середня"> спрайт
+      <input type="radio" name="size" value="Велика"> фанта
+
+      <label>Додаткові інгредієнти:</label>
+      <input type="checkbox" name="extra_cheese"> Лимон
+      <input type="checkbox" name="mushrooms"> Лід
+      <input type="checkbox" name="pepperoni"> М'ята
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Відправити замовлення">
+    <input type="reset" value="Очистити форму">
+  </form>
+</body>
+</html>
